@@ -385,7 +385,7 @@ def main():
     args = parser.parse_args()
 
     if args.server_ip and args.server_port:
-        # Distant debugging - see https://code.visualstudio.com/docs/python/debugging#_attach-to-a-local-script
+      
         import ptvsd
         print("Waiting for debugger attach")
         ptvsd.enable_attach(address=(args.server_ip, args.server_port), redirect_output=True)
